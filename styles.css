@@ -8,24 +8,12 @@ body{
     font-family: 'Work Sans', sans-serif;
     padding: 20px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    display: flex;
-    justify-content: center;
-}
-
-/* container */
-
-.container{
-    width: 90%;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    position: relative;
 }
 
 /* header */
 
 .header{
-    width: 100%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -34,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -61,7 +49,6 @@ header{
 .section-1{
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
 .section-1 .left-container{
@@ -69,13 +56,12 @@ header{
     flex-direction: column;
     gap: 15px  ;
 }
-.hero-text{
+.h1{
     color: #13183F;
     font-weight: 800;
     font-size: 40px;
     line-height: 50px;
     padding: 10px;
-    padding-left: 0px;
  }
 
 .left-container, .right-container{
@@ -90,7 +76,7 @@ header{
 
 .right-container img{
     width: 100%;
-    /* margin: 20px 0; */
+    margin: 20px 0;
 }
 
 .section-button{
@@ -233,9 +219,6 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
         font-size: 18px;
     }
 
@@ -329,11 +312,8 @@ footer{
     .deskstop-img{
         display: initial;
         position: relative;
-        /* left: 200px; */
-        right: -250px;
-        top: -160px;
-        /* bottom: 150px; */
-        overflow: hidden;
+        left: 180px;
+        bottom: 150px;
     }
 
     .mobile-img, .tablet-img{
