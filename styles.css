@@ -200,8 +200,9 @@ footer{
         grid-template-columns: 1fr 1fr;
         gap: 45px;
     }
-
+ 
     .header-button{
+        
         height: 30px;
     }
 
@@ -267,7 +268,9 @@ footer{
 /*  media queries Laptop and desktop*/
 
 @media screen and (min-width: 769px) {
-
+    body{
+    overflow-x: hidden;
+    }
     .header-button{
         height: 50px;
         font-size: 18px;
