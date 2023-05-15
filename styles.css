@@ -1,3 +1,7 @@
+/* mobile. */
+
+/* @media screen and (min-width: 320px){ */
+  
 *{
     padding: 0;
     margin: 0;
@@ -6,40 +10,47 @@
 
 body{
     font-family: 'Work Sans', sans-serif;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    /* background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%); */
     display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 100%;
-    overflow-x: hidden;
+    justify-content: center;
+}
+
+.container{
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    width: 370px;
 }
 
 /* header */
 
-.header{
-    width: 84%;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
+    width: 100%;
+    /* background-color: green; */
 }
+
+/* .header{
+    padding: 20px;
+} */
+
 
 .header-logo{
-    width: 100px;
-}
+    position: relative;
+    left: 20px;
+} 
 
 .header-button{
-    background-color: #13183F;
+    background: #13183F;
     border-radius: 25px;
     color: #FFFFFF;
     border: none;
+    width: 120px;
     padding: 10px 20px;
+    position: relative;
+    right: 10px;
 }
 
 .header-button:hover {
@@ -53,16 +64,11 @@ header{
 .section-1{
     display: grid;
     grid-template-columns: 1fr;
-    width: 85%;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
+    gap: 15px; 
 }
 
 .section-1 .left-container{
-    display: flex;
-    flex-direction: column;
-    gap: 15px  ;
+     padding: 15px;
 }
 .h1{
     color: #13183F;
@@ -73,14 +79,15 @@ header{
     padding-left: 0px;
  }
 
-/* .left-container, .right-container{
-    width: 100%;
-} */
+ .description{
+    color: #83869A;
+    font-size: 16px;
+    position: relative;
+    bottom: 30px;
+ }
 
-.left-container h1{
-    font-size: 30px;
-    font-weight: bolder;
-    padding: 5px 0;
+.left-container, .right-container{
+    width: 100%;
 }
 
 .right-container img{
@@ -91,7 +98,7 @@ header{
 .section-button{
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     border-radius: 25px;
-    padding: 10px;
+    /* padding: 10px; */
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -104,9 +111,11 @@ header{
 }
 
 /*  section 2 */
-.section-2{
+
+
+ .section-2{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr +;
     grid-gap: 40px;
     margin-bottom: 100px;
     width: 85%;
@@ -119,39 +128,43 @@ header{
     font-size: 20px;
     color: #FFFFFF;
     padding: 10px;
-    display: flex;
+    margin: 10px;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
 .item{
-    /* height: 165px; */
     height: 259px;
+    width: 343px;
     background-color: #FFFFFF;
     border-radius: 20px;
-    padding: 30px;
-}
+    padding: 20px;
+    margin-left: 15px;
+ } 
 h3{
     color: #13183F;
-    font-size: 15px;
-    /* padding: 5px; */
+    font-size: 18px;
+    padding: 5px;
     position: relative;
     bottom: 45px;
-}
+ } 
 
 p{
     color: #83869A;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     bottom: 30px;
 }
 
 a{
     color: #F02AA6;
+    font-size: 18px;
+    line-height: 28px;
     text-decoration: none;
     position: relative;
-    bottom: 20px;
+    top: 10px; 
 } 
 
 .animation, .design, .crypto,
@@ -169,13 +182,10 @@ a{
 
 footer{
     background-color:  #13183F;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    width: 90%;
-    align-self: center;
-
 }
 
 .footer-button{
@@ -183,30 +193,38 @@ footer{
     border-radius: 25px;
     color: #FFFFFF;
     border: none;
-    width: 100px;
-    height: 50px;
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 12px;
 }
  
 .footer-button:hover{
     background:  linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     cursor: pointer;
 } 
+/* }  */
+
 
 
 /*  Media Queries Tablet*/
 
-@media screen and (min-width: 481px) {
-    
-    .section-1, .section-2{
-        grid-template-columns: 1fr 1fr;
-        gap: 45px;
-        flex-direction: row;
+ @media screen and (min-width: 768px) {
 
-    }
+    /* body{
+
+    } */
 
     .container{
-        overflow: hidden;
-        padding: 0px 50px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .section-1, .section-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 65px;
+        flex-direction: column;
+
     }
  
     header{
@@ -215,11 +233,11 @@ footer{
         align-items: center;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
+    } 
 
     .header-button{ 
         height: 50px;
-    }
+    } 
 
     .h1{
         font-size: 40px;
@@ -230,7 +248,7 @@ footer{
     .section-button{
         height: 50px;
         font-size: 16px;
-    }
+    } 
 
     .left-container{
         margin-top: 100px;
@@ -240,111 +258,116 @@ footer{
         font-size: 18px;
     }
 
-    /* .right-container img{
-        width: 100%;
-        margin: 20px 0;
-    } */
+    .right-container img{
+        /* width: 100%; */
+        /* margin: 20px 0; */
+    }
 
-    .special-item{
+     .special-item{
         height: 300px;
-        width: 320px;
+        width: 320px; 
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .item{
         width: 320px;
         height: 300px;
-        text-align: left;
+        text-align: left; 
     }
 
-    a{
-        font-size: 15px;
+     a{
+        font-size: 18px;
         padding-top: 20px; 
     }
 
     .animation, .design, .crypto,
     .business, .photography{
         position: relative;
-        top: -65px;
+        top: -50px;
     }
 
     p .photography{
         height: 50px;
-    }
-
-    .right-container > img {
-        width: 600px;
-        overflow: hidden;
-    }
-
+    } 
+    
     .tablet-img{
         display: initial;
         position: relative;
-        right: 80px;
+        left: 150px;
         bottom: 100px;
-        overflow: hidden;
-    }
+        overflow-x: hidden;
+
+    } 
 
     .mobile-img, .deskstop-img{
         display: none;
     }
 
     footer{
-        width: 762px;
-        padding: 20px 40px;
+        width: 100%;
+        /* padding:  50px; */
     }
 }
 
 
 /*  media queries Laptop and desktop*/
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
     body{
         display: flex;
         align-content: center;
         flex-direction: column;
         width: 100%;
-        overflow-x: hidden;
+    } 
+
+    .container{
+        width: 100%;
     }
 
-    header{
+     header{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
     
     .header-logo{
         width: 100px;
-    }
+        position: relative;
+        left: 90px;
+        bottom: 30px;
+    } 
 
-    .header-button{
-        height: 50px;
+     .header-button{
+        width: 160px;
         font-size: 18px;
+        position: relative;
+        bottom: 30px;
+        right: 100px;
     }
 
   .section-1 {
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    width: 85%;
+    width: 400px;
     display: flex;
     align-self: center;
     align-items: center;
     flex-direction: row;
-
   }
 
   .section-1 .left-container{
     display: flex;
-    height: 70vh;
-    display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
+    bottom: 200px;
+    left: 90px;
   }
 
   .h1{
@@ -364,13 +387,13 @@ footer{
     .deskstop-img{
         display: initial;
         position: relative;
-        right: -160px;
+        right: -400px;
         top: -250px;
     }
 
 
     .right-container > img {
-        width: 900px;
+        width: 700px;
     }
     .section-button{
         height: 50px;
@@ -409,7 +432,7 @@ footer{
         padding-top: 20px; 
         display: flex;
         justify-content: baseline;
-    }
+    } 
 
     .animation, .design, .crypto,
     .business, .photography{
@@ -426,5 +449,4 @@ footer{
      width: 100%;
      padding: 1.5% 8%;
     }
-   
-} 
+}  
