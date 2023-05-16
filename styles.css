@@ -168,7 +168,7 @@ a{
 } 
 
 a:hover{
-    background: #FFA7C3;
+    color: #FFA7C3;
     cursor: pointer;
 }
 
@@ -195,18 +195,22 @@ footer{
 
 .footer-button{
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
-    border-radius: 25px;
+    border-radius: 28px;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
-    width: 150px;
-    font-size: 12px;
+    width: 140px;
+    font-size: 14px;
 }
  
 .footer-button:hover{
     background:  linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     cursor: pointer;
 } 
+
+.lower-logo{
+    object-fit: contain;
+}
 /* }  */
 
 
@@ -321,7 +325,11 @@ h4{
     }
 
     .footer-button{
-        width: 104px;
+        width: 140px;
+    }
+
+    .lower-logo{
+        object-fit: contain;
     }
 }
 
@@ -470,6 +478,10 @@ h4{
     }
 
     .footer-button{
-        width: 104px;
+        width: 140px;
+    }
+
+    .lower-logo{
+        object-fit: contain;
     }
 }  
